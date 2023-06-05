@@ -310,7 +310,7 @@ body {
 }
 .main-team-item {
   background-color: var(--color-white);
-  flex-basis: calc((100% - 3 * 24px) / 4);
+  flex-basis: calc((100% - 24px * 3) / 4);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
@@ -340,8 +340,9 @@ body {
   align-items: center;
   justify-content: center;
 }
-/* .team-soc-icons {
-} */
+.team-soc-link:hover {
+  background-color: var(--color-ocean);
+}
 .team-card-txt {
   padding: 32px 16px;
   text-align: center;
@@ -350,21 +351,39 @@ body {
 /* Customer section */
 
 .main-cust-list {
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 24px;
 }
 .main-cust-item {
+  width: calc((100% - (24px * 5)) / 6);
+  height: 88px;
+}
+.main-cust-link {
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 168px;
-  height: 88px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
 }
-.main-cust-icon {
+
+.main-cust-link:hover {
+  border-color: var(--color-ocean);
 }
+
+.main-cust-link:hover .main-cust-icon {
+  fill: var(--color-ocean);
+}
+
+.main-cust-icon {
+  fill: var(--color-light-slate);
+  width: 104px;
+  height: 56px;
+}
+
 /* Footer styles */
 .footer {
   background-color: var(--color-navy-blue);
@@ -383,8 +402,7 @@ body {
   margin: 0 0 16px 0;
   padding: 0;
 }
-.footer-soc-media {
-}
+
 .footer-soc-txt {
   /* line-height: 24px; */
   font-weight: 500;
@@ -409,7 +427,9 @@ body {
   align-items: center;
   justify-content: center;
 }
-.footer-soc-icon {
+
+.footer-soc-link:hover {
+  background-color: var(--color-green);
 }
 /**
   |============================
@@ -445,7 +465,8 @@ body {
   gap: 24px;
   row-gap: 48px;
 }
-.pfl-row-item:hover .pfl-row-item:focus {
+.pfl-row-item:hover,
+.pfl-row-item:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border: 1px solid #e7e9fc;
 }
