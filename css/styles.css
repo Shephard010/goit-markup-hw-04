@@ -553,17 +553,21 @@ body {
   row-gap: 48px;
 }
 
-.pfl-row-item {
+/* .pfl-row-item {
   display: block;
 }
 
-/* .pfl-row-link:hover,
-.pfl-row-link:focus {
+.pfl-row-item:hover,
+.pfl-row-item:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 } */
 
-.pfl-row-item:hover,
-.pfl-row-item:focus {
+.pfl-row-link {
+  display: block;
+}
+
+.pfl-row-link:hover,
+.pfl-row-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
