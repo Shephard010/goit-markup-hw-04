@@ -345,11 +345,6 @@ body {
   justify-content: center;
 }
 
-/* .main-feature-icon {
-  width: 64px;
-  height: 64px;
-} */
-
 /* Service section */
 
 .main-service {
@@ -451,7 +446,7 @@ body {
 
 .main-cust-link:hover .main-cust-icon,
 .main-cust-link:focus .main-cust-icon {
-  fill: var(--color-ocean);
+  color: var(--color-ocean);
 }
 
 .main-cust-icon {
